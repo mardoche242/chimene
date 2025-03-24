@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    animation: zoomIn 2s ease-out;
+}
+
+
+
+header{
+
+
+display: flex;
+justify-content: space-evenly;
+top: 0%;
+left: 0%;
+background-color: rgb(27, 8, 134);
+align-items: center;
+transition: 0.5s;
+z-index: 1;
+width: 100%;
+position: fixed;
+animation: colorChange 15s infinite;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section {
+  animation: fadeInOnScroll 1s forwards;
+
+}
+
+@keyframes fadeInOnScroll {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+@keyframes animationName {
+    0% {
+      /* Starting point */
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      /* Ending point */
+      transform: translateX(100px);
+      opacity: 0;
+    }
+  }
+
+@keyframes colorChange {
+    0% {
+      background-color: rgb(164, 16, 16);
+    }
+    50% {
+      background-color: rgb(104, 104, 15);
+    }
+    75%{
+background-color: rgb(92, 170, 13);
+
+    }
+    100% {
+      background-color: rgb(5, 5, 178);
+    }
+
+    
+  }
+
+marquee{
+    position: relative;
+    bottom: 15vh;
+    
+    
+}
+
+nav ul{
+
+    display: flex;
+    
+}
+
+nav ul li a{
+
+    margin: 15px;
+    color: azure;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+
+}
+
+nav ul li a:hover{
+    color: deeppink;
+    border-bottom: 2px solid;
+    
+    
+
+}
+
+.logo{
+text-decoration: none;
+font-weight: bold;
+color: azure;
+position: relative;
+
+
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: aqua;
+}
+
+span{
+
+    font-weight: 700;
+    color: rgb(244, 2, 2);
+    font-size: 2rem;
+    
+    animation: animationName 4s ease-in-out infinite;
+   
+}
+
+img{
+
+
+height: 8vh;
+width: 5%;
+border-radius: 20px;
+margin: 15px;
+}
+
+.Presentation{
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(45deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/best\ 1.jpg');
+   
+    background-size: cover;
+    background: linear-gradient (rgb(0, 0, 0 0.5), rgb(0, 0, 0 0.5));
+    
+}
+
+.Presentation .contenu{
+
+    color: rgb(255, 255, 255);
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    min-width: 70%;
+    font-weight: 700;
+    margin: 3em 7em 1em 7em;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenu a{
+
+    background-color: blue;
+    border: 2px solid black;
+    color: aliceblue;
+    text-decoration: none;
+font-style: italic;
+    padding: 10px;
+    align-self: center;
+    position: relative;
+    top: 3vh;
+    animation: colorChange 2s infinite;
+}
+
+.contenu a:hover{
+    color: rgb(169, 12, 85);
+    border: 2px solid;
+    transform: scale(1.1);
+}
+
+.Galerie{
+display: flex;
+
+animation: slide 30s infinite linear;
+
+}
+
+
+.Galerie img {
+    width: 30%;
+    height: 50vh;
+    display: inline-block;
+  }
+  
+  .Galerie img:hover{
+    transform: scale(1.1);
+    
+  }
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  .certificat h1{
+    color: rgb(4, 4, 175);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    /* font-weight: 700; */
+    justify-content: center;
+    display: flex;
+  }
+
+  
+.Langues{
+    text-align: center;
+  padding: 50px 50px;
+margin-bottom: 50px;
+background-color: rgb(34, 34, 169);
+}
+
+
+
+.Langues h1{
+
+        color: rgb(255, 255, 255);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 3rem;
+       
+    }
+
+    .langue h2{
+        color: aliceblue;
+        font-weight: bold;
+    }
+
+
+  .Liste-langues{
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+    
+  }
+
+
+  .Liste-langues .langue{
+
+
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #aa9a9a;
+    border-radius: 10px;
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+  }
+
+
+  .Liste-langues img{
+    width: 90%;
+    min-height: 30vh;
+    transition: transform 0.5s ease-in-out;
+    margin: 20px;
+    /* animation: bounceAnimation 15s infinite ease-out; */
+   
+    
+}
+
+.Liste-langues img:hover{
+    transform: scale(1.1);
+    
+}
+  
+
+.paragraphe{
+    font-size: 3rem;
+    font-style: none;
+    font-weight: bold;
+    padding: 30px;
+    letter-spacing: 2px;
+    color: rgba(0, 0, 255, 0.989);
+    border: dotted 2px blueviolet;
+box-shadow:20px 10px rgb(9, 9, 224);
+}
+
+.equipe{
+    text-align: center;
+  padding: 50px 50px;
+  margin-bottom: 50px;
+}
+
+.equipe h1{
+    color: rgb(4, 4, 175);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+    /* font-weight: 700; */
+    justify-content: center;
+    display: flex;
+
+}
+
+.liste-equipe{
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.membre{
+    margin: 40px;
+    padding: 40px;
+    border: 1px solid #aa9a9a;
+    border-radius: 10px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1)
+
+  }
+
+  .membre:hover{
+    animation: colorChange 3s infinite;
+  }
+
+  
+  .membre img{
+
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 30px;
+   position: relative;
+   right: 6vh;
+   width: 120%;
+    
+    
+  }
+
+  .membre img:hover{
+    transform: scale(1.1);
+    animation: colorChange 3s infinite;
+  }
+
+
+
+  @keyframes imageChange {
+    0% {
+      background-color: rgb(164, 16, 16);
+    }
+    50% {
+      background-color: rgb(104, 104, 15);
+    }
+    75%{
+background-color: rgb(92, 170, 13);
+
+    }
+    100% {
+      background-color: rgb(5, 5, 178);
+    }
+
+  }
+
+  .essai{
+    animation: colorChange 3s infinite;
+  }
